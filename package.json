@@ -1,16 +1,18 @@
 {
-  "name": "dennis-snellenberg-portfolio",
-  "title": "Dennis Snellenberg • Freelance Designer & Developer",
-  "description": "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis",
+  "name": "joseph-chay",
+  "title": "Joseph Chay • Designer & Developer",
+  "description": "Helping brands thrive in the digital world. Located in Malaysia. Delivering quality software and digital products.ds thrive in the digital world. Located in Malaysia. Delivering quality software and digital products. © Code by Joseph",
   "author": {
-    "name": "Ali Bagheri",
-    "email": "alibagheri2079.dev@gmail.com",
-    "url": "https://www.github.com/alibagheri2079"
+    "name": "Joseph Chay",
+    "email": "codebulous@gmail.com",
+    "url": "https://www.github.com/josephchay"
   },
   "keywords": [
     "Design",
     "Develope",
-    "Freelance"
+    "Software",
+    "Engineer",
+    "Digital Products"
   ],
   "version": "0.1.0",
   "private": true,

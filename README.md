@@ -16,11 +16,11 @@
 Joseph Chay greets you from his virtual space! This encapsulates at all his interests and skills.
 His works demonstrate smooth and memorable experiences, bringing quality and accuracy to every project.
 
-## ✨ Demo
+## Demo
 
 Visit the portfolio [here](https://github.com/josephchay/folio-2024).
 
-## 🔧 Technologies
+## Tech Stack
 
 ![Next.js](https://img.shields.io/badge/-Next.js-05122A?style=for-the-badge&logo=next.js) &nbsp;
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=for-the-badge&logo=javascript) &nbsp;

@@ -31,8 +31,12 @@ export function Description() {
         </div>
 
         <motion.div
-          whileInView={{ y: '-15%' }}
-          viewport={{ once: true }}
+          whileInView={{
+            y: '-15%'
+          }}
+          viewport={{
+            once: true
+          }}
           transition={{
             duration: 0.5,
           }}
