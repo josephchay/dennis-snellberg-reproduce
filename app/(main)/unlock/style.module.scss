@@ -1,0 +1,43 @@
+.loader {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+  z-index: 2;
+
+  &__words {
+    position: relative;
+    overflow: hidden;
+    height: 41.8rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9) 47%,
+      transparent,
+      transparent 47%,
+      transparent,
+      transparent 55%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.9)
+    );
+  }
+
+  &__word {
+    display: block;
+    font-size: 3.2rem;
+  }
+}
