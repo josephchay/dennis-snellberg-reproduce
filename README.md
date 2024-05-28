@@ -31,7 +31,7 @@ Visit the portfolio [here](https://github.com/josephchay/folio-2024).
 ## Usage
 
 ### Cloudinary Setup
-Setup your Cloudinary account and insert your cloud name in `.env.local`.
+Integrate your Cloudinary account and insert your cloud name in `.env.local`.
 Create a `.env.local` file in the root directory if not yet, based on the template given in `.env.local.example`.
 
 ```env
@@ -40,7 +40,7 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="<Your Cloud Name>"
 
 As of 28th May 2024, you can find your Cloud Name under **Settings > Product Environments** at https://console.cloudinary.com/.
 
-For further integration with Cloudinary, refer to the [documentation for NextJS](https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-next-js).
+For further integration instructions with Cloudinary, refer to https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-next-js.
 
 ### Development
 
