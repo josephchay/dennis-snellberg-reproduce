@@ -20,10 +20,10 @@ export function UserDetails({ transformX }) {
         <div className='flex items-center gap-8'>
           <ImageWrapper>
             <CldImage
-              src='Dennis-Portfolio/images/mqtwxh5znybowgaljrbp'
+              src='JosephChayFolio2024/images/mqtwxh5znybowgaljrbp'
               className='rounded-full object-cover'
               fill={true}
-              alt='Dennis Snellenberg Profile Picture'
+              alt='Joseph Chay Wallpaper'
             />
           </ImageWrapper>
           <MainTitle>Let’s work</MainTitle>
@@ -38,11 +38,18 @@ export function UserDetails({ transformX }) {
 
       <Row>
         <div className='relative w-full'>
-          <div className='h-[1px] bg-muted-foreground' />
+          <div className='h-px bg-muted-foreground' />
           <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
-            <motion.div style={{ x: transformX }}>
+            <motion.div
+              style={{
+                x: transformX
+              }}
+            >
               <Link href='/contact' passHref>
-                <MagneticButton variant='primary' size='lg'>
+                <MagneticButton
+                  variant='primary'
+                  size='lg'
+                >
                   Get in touch
                 </MagneticButton>
               </Link>
@@ -54,13 +61,13 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex w-full flex-col gap-4 lg:flex-row'>
           <div>
-            <a href='mailto:info@dennissnellenberg.com'>
+            <a href='mailto:josephemmanuelchay@gmail.com'>
               <MagneticButton
                 variant='outline'
                 size='md'
                 className='w-full border-muted-foreground'
               >
-                info@dennissnellenberg.com
+                codebulous@gmail.com
               </MagneticButton>
             </a>
           </div>
@@ -71,7 +78,7 @@ export function UserDetails({ transformX }) {
                 size='md'
                 className='w-full border-muted-foreground'
               >
-                +31 6 27 84 74 30
+                +60 16 313 9132
               </MagneticButton>
             </a>
           </div>

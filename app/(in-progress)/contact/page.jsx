@@ -5,7 +5,7 @@ import { Transition } from '@/layout';
 export const metadata = {
   title: 'Contact',
   description:
-    'Helping brands thrive in the digital world. Located in Malaysia. Delivering quality software and digital products.ds thrive in the digital world. Located in Malaysia. Delivering quality software and digital products.',
+    'Helping brands thrive in the digital world. Located in Malaysia. Delivering quality software and digital products.',
 };
 
 export default function Contact() {

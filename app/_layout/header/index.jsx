@@ -17,11 +17,11 @@ export function Header() {
       animate='enter'
     >
       <CldImage
-        src='Dennis-Portfolio/images/lapetmmek4fymz68m4u8'
+        src='JosephChayFolio2024/images/lapetmmek4fymz68m4u8'
         className='object-cover md:scale-125 md:object-contain'
         fill={true}
         sizes='100vw'
-        alt='Dennis Snellenberg Personal Picture'
+        alt='Joseph Chay Wallpaper'
       />
 
       <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
@@ -29,7 +29,7 @@ export function Header() {
           <h1 className='text-[max(9em,15vw)]'>
             <ParallaxSlider repeat={4} baseVelocity={2}>
               <span className='pe-12'>
-                Dennis Snellenberg
+                Joseph Chay
                 <span className='spacer'>—</span>
               </span>
             </ParallaxSlider>

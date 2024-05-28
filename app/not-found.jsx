@@ -4,7 +4,7 @@ import { Center } from '@/components';
 export const metadata = {
   title: '404',
   description:
-    'Helping brands thrive in the digital world. Located in Malaysia. Delivering quality software and digital products.ds thrive in the digital world. Located in Malaysia. Delivering quality software and digital products. © Code by Joseph',
+    'Helping brands thrive in the digital world. Located in Malaysia. Delivering quality software and digital products',
 };
 
 export default function NotFound() {

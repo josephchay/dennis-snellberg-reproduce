@@ -42,7 +42,9 @@ export function MagneticButton({
       whileHover={{ scale: 1.1 }}
       {...props}
     >
-      <MagneticItem>{children}</MagneticItem>
+      <MagneticItem>
+        { children }
+      </MagneticItem>
     </motion.button>
   );
 }
