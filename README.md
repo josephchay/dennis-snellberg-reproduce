@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [About](#about)
-- [Demo](#-demo)
+- [Demo](#demo)
 - [Technologies](#-technologies)
 - [Usage](#usage)
   - [Cloudinary Setup](#cloudinary-setup)
@@ -14,11 +14,11 @@
 ## About
 
 Joseph Chay greets you from his virtual space! This encapsulates at all his interests and skills.
-His works demonstrate smooth and memorable experiences, bringing quality and accuracy to every project.
+His works demonstrate smooth and memorable experiences, bringing quality and accuracy to every project deliverables.
 
 ## Demo
 
-Visit the portfolio [here](https://github.com/josephchay/folio-2024).
+Visit the portfolio live-site [here](https://github.com/josephchay/folio-2024).
 
 ## Tech Stack
 
@@ -31,6 +31,9 @@ Visit the portfolio [here](https://github.com/josephchay/folio-2024).
 ## Usage
 
 ### Cloudinary Setup
+
+This project uses Cloudinary for image and video hosting.
+
 Integrate your Cloudinary account and insert your cloud name in `.env.local`.
 Create a `.env.local` file in the root directory if not yet, based on the template given in `.env.local.example`.
 
