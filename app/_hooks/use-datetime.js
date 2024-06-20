@@ -35,7 +35,11 @@ export const useDatetime = (
   const hour = new Intl.DateTimeFormat(locale, { hour: 'numeric', hour12: false, timeZone }).format(today);
   const wish = `Good ${(hour < 12 && 'Morning') || (hour < 17 && 'Afternoon') || 'Evening'}, `;
 
-  const time = new Intl.DateTimeFormat(locale, { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, timeZone }).format(today);
+  const gmtOffset = today.toLocaleTimeString('en-us', { timeZoneName: 'short', timeZone }).split(' ')[2];
+
+  const timeFormatOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, timeZone };
+  let time = new Intl.DateTimeFormat(locale, timeFormatOptions).format(today);
+  time = `${time} ${gmtOffset}`;
 
   return {
     date,

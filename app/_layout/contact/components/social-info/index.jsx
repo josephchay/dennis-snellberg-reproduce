@@ -12,12 +12,6 @@ import { randomId } from '@/utils';
 import { ListTitle } from './index.styled';
 
 export function SocialInfo() {
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
-
   const { date, time, wish } = useDatetime('Asia/Kuala_Lumpur');
 
   const medias = socialMedias.map(({ href, title }) => {
