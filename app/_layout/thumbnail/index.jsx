@@ -39,7 +39,9 @@ export function Thumbnail() {
       onPointerMove={({ clientX, clientY }) => moveItems(clientX, clientY)}
     >
       <div className='my-8 flex flex-col gap-10'>
-        <ThumbnailLabel>Recent work</ThumbnailLabel>
+        <ThumbnailLabel>
+          Recent work
+        </ThumbnailLabel>
         <ThumbnailList
           handlePointerEnter={handlePointerEnter}
           handlePointerLeave={handlePointerLeave}
@@ -56,7 +58,11 @@ export function Thumbnail() {
           variants={scaleUp}
           active={active}
         />
-        <ThumbnailCursorLabel ref={label} variants={scaleUp} active={active}>
+        <ThumbnailCursorLabel
+          ref={label}
+          variants={scaleUp}
+          active={active}
+        >
           View
         </ThumbnailCursorLabel>
         <ThumbnailAction>

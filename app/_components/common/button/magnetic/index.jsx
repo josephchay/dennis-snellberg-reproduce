@@ -16,6 +16,7 @@ export function MagneticButton({
   className,
   variant,
   size,
+  innerSpeedMultiplier = 0.6,
   ...props
 }) {
   /** @type {import('react').MutableRefObject<HTMLButtonElement>} */
@@ -25,6 +26,9 @@ export function MagneticButton({
     handleMagneticMove,
     handleMagneticOut,
   } = useMagnetic(elementRef);
+
+  const innerX = x * innerSpeedMultiplier;
+  const innerY = y * innerSpeedMultiplier;
 
   return (
     <motion.button
@@ -42,7 +46,18 @@ export function MagneticButton({
       whileHover={{ scale: 1.1 }}
       {...props}
     >
-      <MagneticItem>
+      <MagneticItem
+        animate={{
+          x: innerX,
+          y: innerY,
+        }}
+        transition={{
+          type: 'spring',
+          damping: 15,
+          stiffness: 150,
+          mass: 0.1,
+        }}
+      >
         { children }
       </MagneticItem>
     </motion.button>
