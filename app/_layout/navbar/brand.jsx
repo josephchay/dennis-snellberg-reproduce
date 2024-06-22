@@ -6,7 +6,10 @@ import { MagneticButton } from "@/components";
 
 export function NavbarBrand() {
   return (
-    <MagneticButton size="md">
+    <MagneticButton
+      size="md"
+      innerSpeedMultiplier={ 0 }
+    >
       <div className='group flex cursor-pointer pb-5'>
         <div className='transition-transform duration-500 ease-in-expo group-hover:rotate-[360deg]'>
           {/*<Copyright />*/}
