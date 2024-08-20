@@ -15,7 +15,7 @@ import ProjectHeader from '../components/ProjectHeader';
 import { fotofiesta } from '@/assets';
 import { projectFotofiesta } from '@/constants';
 
-const SpotifyPage = () => {
+const FotofiestaPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -63,4 +63,4 @@ const SpotifyPage = () => {
   );
 };
 
-export default SpotifyPage;
+export default FotofiestaPage;
