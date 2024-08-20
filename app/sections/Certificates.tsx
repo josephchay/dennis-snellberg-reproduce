@@ -40,9 +40,7 @@ const Certificates = () => {
             </p>
           </div>
           <Link
-            href={
-              'https://cp.certmetrics.com/amazon/en/public/verify/credential/09032e021b234f7a991de2bfb3b63080'
-            }
+            href="/"
             target='_blank'
           >
             <FiExternalLink className='h-8 w-8 text-white' />

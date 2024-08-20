@@ -332,8 +332,7 @@ export const projectDocketnotes = {
 export const projectVixta = {
   title: 'Vixta',
   date: 'June - August 2024',
-  description: `Full-stack Netflix clone built with Next.js, replicating the core
-  features of the popular movie streaming platform.`,
+  description: 'A minimalist photo memory archive website with interactive image animations for the fictional fashion brand Vixta.',
   category: ['Design', 'Development'],
   key_tech: ['Nuxt'],
   website_image: vixta,
@@ -344,8 +343,7 @@ export const projectVixta = {
 export const projectFotofiesta = {
   title: 'FotoFiesta',
   date: 'January - June 2024',
-  description: `Full-stack Spotify clone built with Next.js, replicating the core
-  features of the popular music streaming platform.`,
+  description: 'Immerse yourself in an infinite world of captivating visuals, where every snapshot tells a unique story.',
   category: ['Design', 'Development'],
   key_tech: ['JavaScript'],
   website_image: fotofiesta,
