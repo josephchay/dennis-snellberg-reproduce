@@ -1,28 +1,65 @@
+'use client';
+
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { VerticalTimeline } from 'react-vertical-timeline-component';
 
 import SectionWrapper from '@/hoc/SectionWrapper';
+import useSplash from '@/hooks/useSplash';
 import { styles } from '@/lib/styles';
 import { textVariant } from '@/lib/transitions';
 
-import { ExperienceCard } from '@/components/ExperienceCard';
+import { MagneticButton } from '@/components/MagneticButton';
+import { ProjectModal } from '@/components/ProjectModal';
+import ProjectTile from '@/components/ProjectTile';
 
-import { experiences } from '@/constants';
+import { Separator } from '@/components/ui/separator';
+
+import { featuredProjects } from '@/constants';
 
 const Work = () => {
+  const [modal, setModal] = useState({ active: false, index: 0 });
+  const { startSplash } = useSplash();
+
   return (
     <div className='flex flex-col gap-y-8'>
       <motion.h2
         variants={textVariant()}
-        className={`uppercase ${styles.sectionHead}`}
+        className={`${styles.sectionHead} uppercase`}
       >
-        Work Experience
+        Featured Projects
       </motion.h2>
-      <VerticalTimeline animate={false}>
-        {experiences.map((experience, index) => (
-          <ExperienceCard key={index} {...experience} />
-        ))}
-      </VerticalTimeline>
+
+      <div className='grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-0'>
+        <Separator className='hidden lg:flex' />
+        {featuredProjects.map((project, index) => {
+          const { title, type, image, color, link } = project;
+          return (
+            <ProjectTile
+              key={index}
+              index={index}
+              title={title}
+              image={image}
+              color={color}
+              type={type}
+              link={link}
+              setModal={setModal}
+            />
+          );
+        })}
+        <ProjectModal modal={modal} projects={featuredProjects} />
+      </div>
+      <div className='mt-4 flex w-full justify-center'>
+        <MagneticButton
+          size='wide'
+          onClick={() => {
+            startSplash('/work');
+          }}
+        >
+          <p className='text-lg text-primary-foreground lg:text-xl'>
+            More Work
+          </p>
+        </MagneticButton>
+      </div>
     </div>
   );
 };

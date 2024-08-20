@@ -10,9 +10,9 @@ import Certificates from '@/app/sections/Certificates';
 import Contact from '@/app/sections/Contact';
 import Education from '@/app/sections/Education';
 import Hero from '@/app/sections/Hero';
-import Projects from '@/app/sections/Projects';
+import Projects from '@/app/sections/Work';
 import Skills from '@/app/sections/Skills';
-import Work from '@/app/sections/Work';
+import Work from '@/app/sections/Career';
 
 import { Spotlight } from '@/components/ui/spotlight';
 import { WavyBackground } from '@/components/ui/wavy-background';

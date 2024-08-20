@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { type ExperienceType } from '@/types';
 
-export const ExperienceCard = ({
+export const CareerExperienceCard = ({
   title,
   companyName,
   location,

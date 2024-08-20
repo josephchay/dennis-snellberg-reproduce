@@ -56,8 +56,8 @@ export const navLinks = [
     href: '/skills',
   },
   {
-    title: 'Projects',
-    href: '/projects',
+    title: 'Work',
+    href: '/work',
   },
   {
     title: 'Contact',
@@ -227,7 +227,7 @@ export const allProjects: ProjectType[] = [
     image: vixta,
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/vixta-fashion-studio',
-    link: '/projects/vixta',
+    link: '/work/vixta',
   },
   {
     title: 'Ochi (Clone)',
@@ -236,7 +236,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/ochi-clone-frontend',
     website: 'https://ochi-clone-frontend.vercel.app/',
-    link: '/projects/ochi-clone',
+    link: '/work/ochi-clone',
   },
   {
     title: 'FotoFiesta',
@@ -245,7 +245,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/fotofiesta',
     website: 'https://josephchay.github.io/fotofiesta/',
-    link: '/projects/fotofiesta',
+    link: '/work/fotofiesta',
   },
   {
     title: 'Docket Notes',
@@ -260,7 +260,7 @@ export const allProjects: ProjectType[] = [
     image: vixta,
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/vixta-fashion-studio',
-    link: '/projects/vixta',
+    link: '/work/vixta',
   },
   {
     title: 'Ochi (Clone)',
@@ -269,7 +269,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/ochi-clone-frontend',
     website: 'https://ochi-clone-frontend.vercel.app/',
-    link: '/projects/ochi-clone',
+    link: '/work/ochi-clone',
   },
   {
     title: 'FotoFiesta',
@@ -278,7 +278,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/fotofiesta',
     website: 'https://josephchay.github.io/fotofiesta/',
-    link: '/projects/fotofiesta',
+    link: '/work/fotofiesta',
   },
   {
     title: 'Docket Notes',
@@ -293,7 +293,7 @@ export const allProjects: ProjectType[] = [
     image: vixta,
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/vixta-fashion-studio',
-    link: '/projects/vixta',
+    link: '/work/vixta',
   },
   {
     title: 'Ochi (Clone)',
@@ -302,7 +302,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/ochi-clone-frontend',
     website: 'https://ochi-clone-frontend.vercel.app/',
-    link: '/projects/ochi-clone',
+    link: '/work/ochi-clone',
   },
   {
     title: 'FotoFiesta',
@@ -311,7 +311,7 @@ export const allProjects: ProjectType[] = [
     type: ['Design', 'Development'],
     github: 'https://github.com/josephchay/fotofiesta',
     website: 'https://josephchay.github.io/fotofiesta/',
-    link: '/projects/fotofiesta',
+    link: '/work/fotofiesta',
   },
 ];
 
