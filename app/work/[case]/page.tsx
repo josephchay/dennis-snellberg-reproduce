@@ -18,7 +18,7 @@ import ProjectHeader from '../components/ProjectHeader';
 import { workCases } from "@/constants";
 
 interface WorkCasePageProps {
-  params: { case: string };
+  params: { case: keyof typeof workCases };
 }
 
 const WorkCasePage = ({
@@ -31,7 +31,6 @@ const WorkCasePage = ({
     // Only run when params.case changes
     try {
       const loadedCase = workCases[params.case];
-      console.log('Loaded Case:', loadedCase);
       setWorkCase(loadedCase);
     } catch (error) {
       console.error('Failed to load project data:', error);
