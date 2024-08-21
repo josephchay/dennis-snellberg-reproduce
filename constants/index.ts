@@ -315,38 +315,35 @@ export const allProjects: ProjectType[] = [
   },
 ];
 
-export const projectDocketnotes = {
-  title: 'Docket Notes',
-  date: 'February 2024',
-  description: 'Swiftly capture and organize your thoughts on the go with this intuitive quick note jotting app.',
-  category: ['Design', 'Development'],
-  key_tech: ['React'],
-  store_image: docketnotes,
-  dashboard_image: docketnotes,
-  github: 'https://github.com/josephchay/docket-note',
-  dashboard_site: 'https://docketnotes.netlify.app/',
-  store_site_1: 'https://docketnotes.netlify.app/',
-  store_site_2: 'https://docketnotes.netlify.app/',
-};
-
-export const projectVixta = {
-  title: 'Vixta',
-  date: 'June - August 2024',
-  description: 'A minimalist photo memory archive website with interactive image animations for the fictional fashion brand Vixta.',
-  category: ['Design', 'Development'],
-  key_tech: ['Nuxt'],
-  website_image: vixta,
-  github: 'https://github.com/josephchay/vixta-fashion-studio',
-  website: 'https://vixta.netlify.app/',
-};
-
-export const projectFotofiesta = {
-  title: 'FotoFiesta',
-  date: 'January - June 2024',
-  description: 'Immerse yourself in an infinite world of captivating visuals, where every snapshot tells a unique story.',
-  category: ['Design', 'Development'],
-  key_tech: ['JavaScript'],
-  website_image: fotofiesta,
-  github: 'https://github.com/josephchay/fotofiesta',
-  website: 'https://josephchay.github.io/fotofiesta/',
-};
+export const workCases = {
+  'docket-notes': {
+    title: 'Docket Notes',
+    date: 'February 2024',
+    description: 'Swiftly capture and organize your thoughts on the go with this intuitive quick note jotting app.',
+    category: ['Design', 'Development'],
+    techStack: ['React'],
+    image: docketnotes,
+    github: 'https://github.com/josephchay/docket-note',
+    site: 'https://docketnotes.netlify.app/',
+  },
+  'vixta': {
+    title: 'Vixta',
+    date: 'June - August 2024',
+    description: 'A minimalist photo memory archive website with interactive image animations for the fictional fashion brand Vixta.',
+    category: ['Design', 'Development'],
+    techStack: ['JavaScript'],
+    image: vixta,
+    github: 'https://github.com/josephchay/vixta-fashion-studio',
+    site: 'https://vixta.netlify.app/',
+  },
+  'fotofiesta': {
+    title: 'FotoFiesta',
+    date: 'January - June 2024',
+    description: 'Immerse yourself in an infinite world of captivating visuals, where every snapshot tells a unique story.',
+    category: ['Design', 'Development'],
+    techStack: ['JavaScript'],
+    image: fotofiesta,
+    github: 'https://github.com/josephchay/fotofiesta',
+    site: 'https://josephchay.github.io/fotofiesta/',
+  }
+}

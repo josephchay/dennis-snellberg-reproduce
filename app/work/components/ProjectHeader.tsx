@@ -5,14 +5,14 @@ import { Separator } from '@/components/ui/separator';
 interface ProjectHeaderProps {
   title: string;
   category: string[];
-  keyTech: string[];
+  techStack: string[];
   date: string;
 }
 
 const ProjectHeader = ({
   title,
   category,
-  keyTech,
+  techStack,
   date,
 }: ProjectHeaderProps) => {
   return (
@@ -27,7 +27,7 @@ const ProjectHeader = ({
         <div className='flex flex-col gap-y-6 md:gap-y-8'>
           <p className='text-xs text-muted-foreground md:text-sm'>Tech Stack</p>
           <Separator />
-          <p className='text-base md:text-lg'>{keyTech.join(', ')}</p>
+          <p className='text-base md:text-lg'>{techStack.join(', ')}</p>
         </div>
         <div className='flex flex-col gap-y-6 md:gap-y-8'>
           <p className='text-xs text-muted-foreground md:text-sm'>Production Period</p>
