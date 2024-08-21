@@ -26,7 +26,7 @@ const Work = () => {
         variants={textVariant()}
         className={`${styles.sectionHead} uppercase`}
       >
-        Featured Cases
+        Featured Work
       </motion.h2>
 
       <div className='grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-0'>
