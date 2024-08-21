@@ -14,7 +14,7 @@ export interface FeaturedProjectType {
   type: string;
   image: StaticImageData;
   color: string;
-  link: string;
+  path: string;
 }
 
 export interface ProjectType {

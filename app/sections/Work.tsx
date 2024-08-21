@@ -32,16 +32,16 @@ const Work = () => {
       <div className='grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-0'>
         <Separator className='hidden lg:flex' />
         {featuredProjects.map((project, index) => {
-          const { title, type, image, color, link } = project;
+          const { title, type, image, color, path } = project;
           return (
             <ProjectTile
-              key={index}
-              index={index}
-              title={title}
-              image={image}
-              color={color}
-              type={type}
-              link={link}
+              key={ index }
+              index={ index }
+              title={ title }
+              image={ image }
+              color={ color }
+              type={ type }
+              link={ `/work/${path}` }
               setModal={setModal}
             />
           );
