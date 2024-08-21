@@ -4,10 +4,10 @@ import abc from './company/abc.png';
 
 import universityLogo from './university-logo.jpeg';
 
-import docketnotes from './projects/docketnotes.png';
-import vixta from './projects/vixta.png';
-import ochiclone from './projects/ochi-clone.png';
-import fotofiesta from './projects/fotofiesta.png';
+import docketnotes from './works/docketnotes.png';
+import vixta from './works/vixta.png';
+import ochiclone from './works/ochi-clone.png';
+import fotofiesta from './works/fotofiesta.png';
 
 import c from './tech/c.png';
 import cpp from './tech/cplusplus.png';

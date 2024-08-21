@@ -6,7 +6,7 @@ import Image, { type StaticImageData } from 'next/image';
 import { Separator } from '@/components/ui/separator';
 import { slideIn } from '@/lib/transitions';
 
-interface ProjectTileProps {
+interface WorkCaseTileProps {
   index: number;
   title: string;
   image: StaticImageData;
@@ -16,7 +16,7 @@ interface ProjectTileProps {
   setModal: ({ active, index }: { active: boolean; index: number }) => void;
 }
 
-const ProjectTile = ({
+const WorkCaseTile = ({
   index,
   title,
   image,
@@ -24,7 +24,7 @@ const ProjectTile = ({
   type,
   link,
   setModal,
-}: ProjectTileProps) => {
+}: WorkCaseTileProps) => {
   return (
     <>
       {/* Desktop */}
@@ -85,4 +85,4 @@ const ProjectTile = ({
   );
 };
 
-export default ProjectTile;
+export default WorkCaseTile;

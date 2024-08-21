@@ -44,7 +44,7 @@ import {
   ochiclone,
   fotofiesta,
 } from '@/assets';
-import type { ExperienceType, FeaturedProjectType, ProjectType } from '@/types';
+import type { ExperienceType, FeaturedWorkCaseType, WorkCaseType } from '@/types';
 
 export const navLinks = [
   {
@@ -140,7 +140,7 @@ export const techStack = [
   },
   {
     title: 'Backend',
-    description: 'With a strong proficiency in Node.js and Express.js, I have engineered robust backend solutions that exemplify a deep understanding of server-side operations. Additionally, my expertise in Django, Firebase, and Supabase positions me to seamlessly integrate these technologies into complex projects, delivering scalable and efficient results.',
+    description: 'With a strong proficiency in Node.js and Express.js, I have engineered robust backend solutions that exemplify a deep understanding of server-side operations. Additionally, my expertise in Django, Firebase, and Supabase positions me to seamlessly integrate these technologies into complex works, delivering scalable and efficient results.',
     tech: [
       { name: 'Node.js', icon: nodejs, expertise: true },
       { name: 'Express.js', icon: expressjs, expertise: true },
@@ -161,7 +161,7 @@ export const techStack = [
   },
   {
     title: 'Mobile',
-    description: 'I have developed a robust expertise in Flutter and Riverpod, utilizing these frameworks to create high-quality, cross-platform mobile applications. Currently, I am expanding my skill set by exploring Android and Jetpack Compose, and I am eager to integrate these technologies into future development projects to enhance my capabilities further.',
+    description: 'I have developed a robust expertise in Flutter and Riverpod, utilizing these frameworks to create high-quality, cross-platform mobile applications. Currently, I am expanding my skill set by exploring Android and Jetpack Compose, and I am eager to integrate these technologies into future development works to enhance my capabilities further.',
     tech: [
       { name: 'Flutter', icon: flutter, expertise: true },
       { name: 'Riverpod', icon: riverpod, expertise: false },
@@ -171,7 +171,7 @@ export const techStack = [
   },
   {
     title: 'Other',
-    description: 'I am proficient in Git and debugging, leveraging these tools for effective version control and software troubleshooting. With a solid understanding of AWS, I ensure the implementation of seamless cloud computing solutions. Currently, I am exploring Docker and am enthusiastic about incorporating it into future projects to streamline development processes.',
+    description: 'I am proficient in Git and debugging, leveraging these tools for effective version control and software troubleshooting. With a solid understanding of AWS, I ensure the implementation of seamless cloud computing solutions. Currently, I am exploring Docker and am enthusiastic about incorporating it into future works to streamline development processes.',
     tech: [
       { name: 'Git', icon: git, expertise: true },
       { name: 'Debugging', icon: debug, expertise: true },
@@ -182,7 +182,7 @@ export const techStack = [
   },
 ];
 
-export const featuredProjects: FeaturedProjectType[] = [
+export const featuredWork: FeaturedWorkCaseType[] = [
   {
     title: 'Docket Notes',
     color: '#18181b',
@@ -213,7 +213,7 @@ export const featuredProjects: FeaturedProjectType[] = [
   },
 ];
 
-export const allProjects: ProjectType[] = [
+export const allWorkCases: WorkCaseType[] = [
   {
     title: 'Docket Notes',
     description: 'Swiftly capture and organize your thoughts on the go with this intuitive quick note jotting app.',

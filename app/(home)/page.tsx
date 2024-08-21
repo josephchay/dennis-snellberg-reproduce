@@ -10,9 +10,9 @@ import Certificates from '@/app/sections/Certificates';
 import Contact from '@/app/sections/Contact';
 import Education from '@/app/sections/Education';
 import Hero from '@/app/sections/Hero';
-import Projects from '@/app/sections/Work';
+import FeaturedWorkCases from '@/app/sections/Work';
 import Skills from '@/app/sections/Skills';
-import Work from '@/app/sections/Career';
+import Career from '@/app/sections/Career';
 
 import { Spotlight } from '@/components/ui/spotlight';
 import { WavyBackground } from '@/components/ui/wavy-background';
@@ -79,11 +79,11 @@ const Home = () => {
           </div>
         )}
         <About />
-        <Work />
+        <Career />
         <Education />
         <Certificates />
         <Skills />
-        <Projects />
+        <FeaturedWorkCases />
         <Contact />
       </div>
     </main>

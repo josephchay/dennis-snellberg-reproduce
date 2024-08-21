@@ -9,7 +9,7 @@ export interface ExperienceType {
   date: string;
   points: string[];
 }
-export interface FeaturedProjectType {
+export interface FeaturedWorkCaseType {
   title: string;
   type: string;
   image: StaticImageData;
@@ -17,7 +17,7 @@ export interface FeaturedProjectType {
   path: string;
 }
 
-export interface ProjectType {
+export interface WorkCaseType {
   title: string;
   description: string;
   type: string[];

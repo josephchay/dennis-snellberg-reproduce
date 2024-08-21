@@ -51,4 +51,4 @@ const Certificates = () => {
   );
 };
 
-export default SectionWrapper(Certificates, 'certficates');
+export default SectionWrapper(Certificates, 'certificates');

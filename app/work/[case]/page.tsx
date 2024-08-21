@@ -13,7 +13,7 @@ import StandingNavbar from '@/app/components/navbar/StandingNavbar';
 import DisplayPicture from '@/components/DisplayPicture';
 import { MagneticButton } from '@/components/MagneticButton';
 
-import ProjectHeader from '../components/ProjectHeader';
+import WorkCaseHeader from '../components/WorkCaseHeader';
 
 import { workCases } from "@/constants";
 
@@ -33,7 +33,7 @@ const WorkCasePage = ({
       const loadedCase = workCases[params.case];
       setWorkCase(loadedCase);
     } catch (error) {
-      console.error('Failed to load project data:', error);
+      console.error('Failed to load case data:', error);
     }
   }, [params.case]);  // Add params.case as a dependency
 
@@ -48,7 +48,7 @@ const WorkCasePage = ({
         {workCase && (
           <>
             <div className='relative mt-36 w-full pb-36 md:mt-44'>
-              <ProjectHeader
+              <WorkCaseHeader
                 title={ workCase.title }
                 date={ workCase.date }
                 category={ workCase.category }

@@ -5,11 +5,11 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
-import { type FeaturedProjectType } from '@/types';
+import { type FeaturedWorkCaseType } from '@/types';
 
-interface ProjectModalProps {
+interface WorkCaseModalProps {
   modal: { active: boolean; index: number };
-  projects: FeaturedProjectType[];
+  list: FeaturedWorkCaseType[];
 }
 
 const scaleAnimation = {
@@ -28,7 +28,7 @@ const scaleAnimation = {
   },
 };
 
-export const ProjectModal = ({ modal, projects }: ProjectModalProps) => {
+export const WorkCaseModal = ({ modal, list }: WorkCaseModalProps) => {
   const containerRef = useRef<HTMLDivElement>(null!);
   const cursorRef = useRef<HTMLDivElement>(null!);
   const cursorLabelRef = useRef<HTMLDivElement>(null!);
@@ -91,8 +91,8 @@ export const ProjectModal = ({ modal, projects }: ProjectModalProps) => {
           }}
           className='absolute h-full w-full'
         >
-          {projects.map((project, index) => {
-            const { title, image, color } = project;
+          {list.map((workCase, index) => {
+            const { title, image, color } = workCase;
             return (
               <div
                 key={index}

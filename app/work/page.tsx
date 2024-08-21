@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 
 import SplashOut from '@/app/components/SplashOut';
 import StandingNavbar from '@/app/components/navbar/StandingNavbar';
-import { ProjectParallax } from '@/components/ProjectParallax';
-import { allProjects } from '@/constants';
+import { WorkParallax } from '@/components/WorkParallax';
+import { allWorkCases } from '@/constants';
 
 // const filters = [
 //   { title: 'All', value: 'all' },
@@ -15,7 +15,7 @@ import { allProjects } from '@/constants';
 //   { title: 'Embedded', value: 'embedded-systems' },
 // ];
 
-const ProjectsPage = () => {
+const WorkPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -33,10 +33,10 @@ const ProjectsPage = () => {
       </AnimatePresence>
       <div className={`h-full w-full ${isLoading && 'hidden'}`}>
         <StandingNavbar />
-        <ProjectParallax projects={allProjects} />
+        <WorkParallax works={allWorkCases} />
       </div>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default WorkPage;

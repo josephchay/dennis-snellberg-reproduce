@@ -9,12 +9,12 @@ import { styles } from '@/lib/styles';
 import { textVariant } from '@/lib/transitions';
 
 import { MagneticButton } from '@/components/MagneticButton';
-import { ProjectModal } from '@/components/ProjectModal';
-import ProjectTile from '@/components/ProjectTile';
+import { WorkCaseModal } from '@/components/WorkCaseModal';
+import WorkCaseTile from '@/components/WorkCaseTile';
 
 import { Separator } from '@/components/ui/separator';
 
-import { featuredProjects } from '@/constants';
+import { featuredWork } from '@/constants';
 
 const Work = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
@@ -26,15 +26,15 @@ const Work = () => {
         variants={textVariant()}
         className={`${styles.sectionHead} uppercase`}
       >
-        Featured Projects
+        Featured Cases
       </motion.h2>
 
       <div className='grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-0'>
         <Separator className='hidden lg:flex' />
-        {featuredProjects.map((project, index) => {
-          const { title, type, image, color, path } = project;
+        {featuredWork.map((workCase, index) => {
+          const { title, type, image, color, path } = workCase;
           return (
-            <ProjectTile
+            <WorkCaseTile
               key={ index }
               index={ index }
               title={ title }
@@ -46,7 +46,7 @@ const Work = () => {
             />
           );
         })}
-        <ProjectModal modal={modal} projects={featuredProjects} />
+        <WorkCaseModal modal={modal} list={featuredWork} />
       </div>
       <div className='mt-4 flex w-full justify-center'>
         <MagneticButton
