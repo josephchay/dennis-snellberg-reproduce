@@ -56,7 +56,7 @@ const Work = () => {
           }}
         >
           <p className='text-lg text-primary-foreground lg:text-xl'>
-            More Work
+            More Cases
           </p>
         </MagneticButton>
       </div>
