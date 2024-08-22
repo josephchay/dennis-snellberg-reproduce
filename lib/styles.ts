@@ -19,6 +19,7 @@ export const styles = {
   bgDark: 'bg-[#1B1D20]',
   bgLight: 'bg-[#f0f4fa]',
   bgPrimary: 'bg-[#465CE9]',
+  bgMuted: 'bg-[#82868c]',
 
   fillDark: 'fill-[#1B1D20]',
   fillLight: 'fill-[#f0f4fa]',

@@ -68,7 +68,7 @@ export const NavModal = () => {
               >
                 <div className='flex flex-col gap-y-4 uppercase'>
                   <p className={`text-xs ${styles.textMuted}`}>Navigation</p>
-                  <Separator className={`${styles.bgLight}`} />
+                  <Separator className={`${styles.bgMuted}`} />
                 </div>
 
                 <div className='flex flex-col gap-y-2'>
