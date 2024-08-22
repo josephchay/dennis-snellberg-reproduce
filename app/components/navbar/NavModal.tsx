@@ -1,5 +1,7 @@
 'use client';
 
+import { styles } from '@/lib/styles';
+
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
@@ -57,7 +59,7 @@ export const NavModal = () => {
             <motion.div
               animate={animate}
               variants={widthVariants}
-              className='box-border flex h-full flex-col justify-around bg-slate-900'
+              className={`box-border flex h-full flex-col justify-around ${styles.bgDark}`}
             >
               <motion.div
                 animate={animate}
@@ -65,8 +67,8 @@ export const NavModal = () => {
                 className='mx-auto my-auto flex min-h-[500px] w-3/4 flex-col justify-around xl:w-3/5'
               >
                 <div className='flex flex-col gap-y-4 uppercase'>
-                  <p className='text-xs text-muted-foreground'>Navigation</p>
-                  <Separator className='bg-muted-foreground' />
+                  <p className={`text-xs ${styles.textMuted}`}>Navigation</p>
+                  <Separator className={`${styles.bgLight}`} />
                 </div>
 
                 <div className='flex flex-col gap-y-2'>
@@ -90,7 +92,7 @@ export const NavModal = () => {
                           initial='initial'
                           animate={animate}
                           variants={linkVariants(width)}
-                          className='lg-[4rem] xl-[5rem] text-[2rem]'
+                          className={`lg-[4rem] xl-[5rem] text-[2rem] ${styles.textLight}`}
                         >
                           {title}
                         </motion.p>
@@ -99,7 +101,7 @@ export const NavModal = () => {
                   })}
                 </div>
                 <div className='mt-4 flex flex-col gap-y-4'>
-                  <p className='text-xs uppercase text-muted-foreground'>
+                  <p className={`text-xs uppercase ${styles.textMuted}`}>
                     Socials
                   </p>
                   <div className='flex flex-row gap-x-4 xl:gap-x-8'>
@@ -111,7 +113,7 @@ export const NavModal = () => {
                           modifier={{ x: 0.3, y: 0.3 }}
                         >
                           <a
-                            className='font-light underline-offset-8 hover:underline'
+                            className={`font-light underline-offset-8 hover:underline ${styles.textLight}`}
                             href={link}
                             target='_blank'
                             rel='noreferrer'
@@ -125,8 +127,9 @@ export const NavModal = () => {
                 </div>
               </motion.div>
             </motion.div>
+
             {/* Curve */}
-            <svg className='pointer-events-none absolute -left-[199px] top-0 h-full w-[200px] fill-slate-900 stroke-none'>
+            <svg className={`pointer-events-none absolute -left-[199px] top-0 h-full w-[200px] ${styles.fillDark} stroke-none`}>
               <motion.path
                 variants={pathAnimation(initialPath, targetPath)}
                 initial='initial'

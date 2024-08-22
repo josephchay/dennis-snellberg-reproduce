@@ -1,7 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useState, type PropsWithChildren } from 'react';
+import { motion } from 'framer-motion';
+
+import { styles } from '@/lib/styles';
 
 import { textSlide } from '@/lib/animations';
 
@@ -20,7 +22,7 @@ const StatusLight = ({
     <div
       className={`${isActive ? 'opacity-100' : 'opacity-0'} ${
         size === 'large' ? 'h-3 w-3' : 'h-2 w-2'
-      } absolute bg-white ${
+      } absolute ${styles.bgLight} ${
         side === 'left'
           ? size === 'large'
             ? '-left-8 bottom-1/2 translate-y-1/2'
