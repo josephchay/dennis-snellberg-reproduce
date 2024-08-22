@@ -26,9 +26,7 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
 
   return (
     <html lang='en' className='no-scrollbar'>
-      <body
-        className={cn(inter.className, 'relative flex min-h-screen flex-col')}
-      >
+      <body className={cn(inter.className, 'relative flex min-h-screen flex-col')}>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
