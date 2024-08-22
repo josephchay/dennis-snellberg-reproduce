@@ -1,5 +1,7 @@
 'use client';
 
+import { styles } from '@/lib/styles';
+
 import { AnimatePresence, motion, type Variants } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
@@ -40,10 +42,10 @@ const FloatingNav = () => {
     };
   }, []);
 
-  const css = `before:block before:h-[2px] before:w-2/5 before:m-auto before:bg-slate-900 
-    before:relative before:transition before:duration-300 after:block 
-    after:h-[2px] after:w-2/5 after:m-auto after:bg-slate-900 after:relative 
-    after:transition after:duration-300 before:top-[5px] after:-top-[5px] 
+  const css = `before:block before:h-[2px] before:w-2/5 before:m-auto ${styles.beforeBgLight}
+    before:relative before:transition before:duration-300 after:block
+    after:h-[2px] after:w-2/5 after:m-auto ${styles.afterBgLight} after:relative
+    after:transition after:duration-300 before:top-[5px] after:-top-[5px]
     content-none`;
 
   const buttonHover: Variants = {
@@ -72,7 +74,7 @@ const FloatingNav = () => {
             animate='enter'
             exit='exit'
             whileHover={{ scale: 1.15 }}
-            className='relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full bg-white md-height:xl:h-24 md-height:xl:w-24'
+            className={`relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full ${isOpen ? styles.bgPrimary : styles.bgDark} md-height:xl:h-24 md-height:xl:w-24`}
             onMouseEnter={() => {
               setIsHovered(true);
             }}
@@ -83,7 +85,7 @@ const FloatingNav = () => {
             <AnimatePresence>
               {isHovered && (
                 <motion.div
-                  className='pointer-events-none absolute left-0 top-0 h-full w-full rounded-full bg-teal-600'
+                  className={`pointer-events-none absolute left-0 top-0 h-full w-full rounded-full ${styles.bgPrimary}`}
                   variants={buttonHover}
                   initial={'initial'}
                   animate={'enter'}
