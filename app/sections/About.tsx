@@ -1,13 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 import SectionWrapper from '@/hoc/SectionWrapper';
 import { styles } from '@/lib/styles';
-import { fadeIn, textVariant } from '@/lib/transitions';
-
-import { me } from '@/assets';
+import { fadeIn } from '@/lib/transitions';
+// import { fadeIn, textVariant } from '@/lib/transitions';
 
 const About = () => {
   return (
