@@ -9,12 +9,14 @@ import { Button } from '@/components/ui/button';
 
 interface MagneticButtonProps extends PropsWithChildren {
   size?: 'default' | 'sm' | 'lg' | 'icon' | 'round' | 'filter' | 'wide';
+  withShadow?: boolean;
   onClick: () => void;
 }
 
 export const MagneticButton = ({
   size = 'round',
   onClick,
+  withShadow = false,
   children,
 }: MagneticButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -33,11 +35,11 @@ export const MagneticButton = ({
 
   return (
     <MagneticComponent
-      className='inline-block rounded-full shadow-2xl'
+      className='inline-block rounded-full'
       modifier={{ x: 0.2, y: 0.2 }}
     >
       <Button
-        className='relative overflow-hidden'
+        className={`relative overflow-hidden transition-shadow duration-300 ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)]' : ''}`}
         size={size}
         onClick={onClick}
         onMouseEnter={() => {

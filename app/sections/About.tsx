@@ -7,7 +7,22 @@ import { styles } from '@/lib/styles';
 import { fadeIn } from '@/lib/transitions';
 // import { fadeIn, textVariant } from '@/lib/transitions';
 
+import { MagneticButton } from "@/components/MagneticButton";
+import { useEffect, useState } from "react";
+import useSplash from "@/hooks/useSplash";
+
 const About = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const { startSplash } = useSplash();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <>
       {/* <motion.h2 */}
@@ -26,11 +41,20 @@ const About = () => {
             Together, we&apos;ll redefine what&apos;s possible. Always bold, passionate, and beyond the curve.
           </motion.p>
         </div>
-        <div className='w-full md:w-[30%] flex items-center justify-center md:pl-8'>
-          <motion.p>
+        <div className='w-full md:w-[30%] flex flex-col justify-center md:pl-8 md:pt-2'>
+          <motion.p className="md:mb-12">
             With expertise in design and development,
             I am uniquely positioned at the forefront of technological innovation.
           </motion.p>
+          <MagneticButton
+            onClick={() => {
+              startSplash('/skills');
+            }}
+          >
+            <p className='text-lg text-primary-foreground lg:text-xl'>
+              About Me
+            </p>
+          </MagneticButton>
         </div>
       </div>
     </>
