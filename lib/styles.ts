@@ -23,7 +23,7 @@ export const styles = {
   paddingX: 'sm:px-16 px-6',
   paddingY: 'sm:py-16 py-6',
   padding: 'px-4 sm:px-10 im:px-20 lg:px-20 py-10 sm:py-16',
-  paddingWithTighterX: 'px-10 sm:px-14 md:px-24 im:px-26 lg:px-28 py-10 sm:py-16',
+  paddingWithTighterX: 'px-10 sm:px-14 md:px-24 im:px-26 lg:px-36 xl:px-44 py-10 sm:py-16',
 
   workCasePaddingX: 'px-4 sm:px-20 lg:px-32',
 
