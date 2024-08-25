@@ -33,7 +33,7 @@ const StandingNavbar = () => {
         <p>Menu</p>
       </NavLink>
 
-      {/* DesktopNav */}
+      {/* Desktop Nav */}
       <div className='flex flex-row gap-x-8'>
         {navLinks.map((link, index) => {
           const isPath = pathname === link.href;

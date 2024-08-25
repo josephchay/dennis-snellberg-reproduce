@@ -1,7 +1,9 @@
 'use client';
 
-import { AnimatePresence, motion, type Variants } from 'framer-motion';
 import { useState, type PropsWithChildren } from 'react';
+import { AnimatePresence, motion, type Variants } from 'framer-motion';
+
+import { styles } from "@/lib/styles";
 
 import MagneticComponent from '@/hoc/MagneticComponent';
 
@@ -39,7 +41,7 @@ export const MagneticButton = ({
       modifier={{ x: 0.2, y: 0.2 }}
     >
       <Button
-        className={`relative overflow-hidden transition-shadow duration-300 ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)]' : ''}`}
+        className={`relative overflow-hidden duration-300 ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] transition-shadow' : ''}`}
         size={size}
         onClick={onClick}
         onMouseEnter={() => {
@@ -52,7 +54,7 @@ export const MagneticButton = ({
         <AnimatePresence>
           {isHovered && (
             <motion.div
-              className='pointer-events-none absolute left-0 top-0 h-full w-full rounded-full bg-teal-600'
+              className={`pointer-events-none absolute left-0 top-0 h-full w-full rounded-full ${styles.bgPrimary}`}
               variants={buttonHover}
               initial={'initial'}
               animate={'enter'}

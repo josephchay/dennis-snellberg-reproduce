@@ -51,7 +51,7 @@ const About = () => {
               startSplash('/skills');
             }}
           >
-            <p className='text-lg text-primary-foreground lg:text-xl'>
+            <p className='font-normal text-lg text-primary-foreground lg:text-xl'>
               About Me
             </p>
           </MagneticButton>
