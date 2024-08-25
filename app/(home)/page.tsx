@@ -79,10 +79,10 @@ const Home = () => {
           </div>
         )}
         <About />
-        <Career />
-        <Education />
-        <Certificates />
-        <Skills />
+        {/* <Career /> */}
+        {/* <Education /> */}
+        {/* <Certificates /> */}
+        {/* <Skills /> */}
         <FeaturedWorkCases />
         <Contact />
       </div>
