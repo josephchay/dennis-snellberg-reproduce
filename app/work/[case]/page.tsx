@@ -58,7 +58,7 @@ const WorkCasePage = ({
                 <Link href={ workCase.site } target='_blank'>
                   <MagneticButton onClick={() => {}}>
                     <div className='flex items-end gap-x-2'>
-                      <p className='text-lg leading-5'>Live Site</p>
+                      <p className='font-normal text-lg leading-5'>Live Site</p>
                       <ExternalLinkIcon />
                     </div>
                   </MagneticButton>
@@ -68,7 +68,7 @@ const WorkCasePage = ({
                 <Link href={ workCase.site } target='_blank'>
                   <MagneticButton onClick={() => {}}>
                     <div className='flex items-end gap-x-2'>
-                      <p className='text-lg leading-5'>Source</p>
+                      <p className='font-normal text-lg leading-5'>Source</p>
                       <ExternalLinkIcon />
                     </div>
                   </MagneticButton>

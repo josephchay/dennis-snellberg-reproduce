@@ -55,7 +55,7 @@ const Work = () => {
             startSplash('/work');
           }}
         >
-          <p className='text-lg text-primary-foreground lg:text-xl'>
+          <p className='font-normal text-lg text-primary-foreground lg:text-xl'>
             More Cases
           </p>
         </MagneticButton>
