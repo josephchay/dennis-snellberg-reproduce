@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { styles } from '@/lib/styles';
 import { cn } from '@/lib/utils';
 
-const SectionWrapper = (Component: React.FC, id: string, className?: string) =>
+type PaddingType = 'default' | 'tighterX';
+
+const SectionWrapper = (
+  Component: React.FC,
+  id: string,
+  paddingType: PaddingType = 'default',
+  className?: string
+) =>
   function HOC() {
     return (
       <motion.section
@@ -20,7 +27,11 @@ const SectionWrapper = (Component: React.FC, id: string, className?: string) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.15 }}
-        className={cn(`${styles.padding} mx-auto w-full max-w-8xl`, className)}
+        className={cn(
+          `${paddingType === 'default' ? styles.padding : styles.paddingWithTighterX}
+          mx-auto w-full max-w-8xl`,
+          className
+        )}
       >
         <Component />
       </motion.section>

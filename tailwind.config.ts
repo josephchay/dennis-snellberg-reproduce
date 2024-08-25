@@ -125,6 +125,14 @@ const config = {
         spotlight: 'spotlight 2s ease .75s 1 forwards',
       },
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'im': '896px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [
     require('tailwindcss-animate'),
