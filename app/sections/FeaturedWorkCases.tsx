@@ -50,12 +50,13 @@ const FeaturedWorkCases = () => {
       </div>
       <div className='mt-4 flex w-full justify-center'>
         <MagneticButton
+          variant="outline"
           size='wide'
           onClick={() => {
             startSplash('/work');
           }}
         >
-          <p className='font-normal text-lg text-primary-foreground lg:text-xl'>
+          <p className='font-normal text-md lg:text-lg'>
             More Cases
           </p>
         </MagneticButton>
