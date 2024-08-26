@@ -6,13 +6,13 @@ import { useEffect, useState } from 'react';
 import SplashOut from '@/app/components/SplashOut';
 import StandingNavbar from '@/app/components/navbar/StandingNavbar';
 import About from '@/app/sections/About';
-import Certificates from '@/app/sections/Certificates';
+// import Certificates from '@/app/sections/Certificates';
 import Contact from '@/app/sections/Contact';
-import Education from '@/app/sections/Education';
+// import Education from '@/app/sections/Education';
 import Hero from '@/app/sections/Hero';
-import FeaturedWorkCases from '@/app/sections/Work';
-import Skills from '@/app/sections/Skills';
-import Career from '@/app/sections/Career';
+import FeaturedWorkCases from '@/app/sections/FeaturedWorkCases';
+// import Skills from '@/app/sections/Skills';
+// import Career from '@/app/sections/Career';
 
 import { Spotlight } from '@/components/ui/spotlight';
 import { WavyBackground } from '@/components/ui/wavy-background';

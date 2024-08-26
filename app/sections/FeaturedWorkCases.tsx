@@ -16,7 +16,7 @@ import { Separator } from '@/components/ui/separator';
 
 import { featuredWork } from '@/constants';
 
-const Work = () => {
+const FeaturedWorkCases = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
   const { startSplash } = useSplash();
 
@@ -42,7 +42,7 @@ const Work = () => {
               color={ color }
               type={ type }
               link={ `/work/${path}` }
-              setModal={setModal}
+              setModal={ setModal }
             />
           );
         })}
@@ -64,4 +64,4 @@ const Work = () => {
   );
 };
 
-export default SectionWrapper(Work, 'work');
+export default SectionWrapper(FeaturedWorkCases, 'work');

@@ -28,7 +28,7 @@ const About = () => {
       {/* > */}
       {/*   About Me */}
       {/* </motion.h2> */}
-      <div className='mt-8 flex w-full flex-col gap-y-8 md:flex-row md:gap-x-8'>
+      <div className={`mt-8 flex w-full flex-col gap-y-8 md:flex-row md:gap-x-8 ${styles.extraPaddingX}`}>
         <div className='flex-grow space-y-8 md:max-w-[70%] md:pr-8'>
           <motion.p
             variants={fadeIn('', '', 0.1, 1)}
@@ -58,4 +58,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, 'about', 'tighterX');
+export default SectionWrapper(About, 'about');

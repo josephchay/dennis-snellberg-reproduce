@@ -22,11 +22,11 @@ export const styles = {
 
   paddingX: 'sm:px-16 px-6',
   paddingY: 'sm:py-16 py-6',
-  padding: 'px-4 sm:px-10 im:px-20 lg:px-20 py-10 sm:py-16',
-  paddingWithTighterX: 'px-10 sm:px-14 md:px-24 im:px-26 lg:px-36 xl:px-44 py-10 sm:py-16',
+  padding: 'px-4 sm:px-10 im:px-20 lg:px-24 py-10 sm:py-16',
+  extraPaddingX: 'px-10 im:px-14 xl:px-24 2xl:px-34',
 
   workCasePaddingX: 'px-4 sm:px-20 lg:px-32',
 
-  sectionHead: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1B1D20]',
+  sectionHead: 'text-xs text-[#82868c]',
   skillsHead: 'text-2xl md:text-3xl lg:text-4xl text-[#1B1D20]',
 };
