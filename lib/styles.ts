@@ -10,15 +10,18 @@ export const styles = {
   bgDark: 'bg-[#1B1D20]',
   bgLight: 'bg-[#f0f4fa]',
   bgPrimary: 'bg-[#465CE9]',
-  bgMuted: 'bg-[#82868c]',
+  bgMuted: 'bg-[#b9c0c9]',
+  bgMutedDark: 'bg-[#82868c]',
 
   fillDark: 'fill-[#1B1D20]',
   fillLight: 'fill-[#f0f4fa]',
-  fillMuted: 'fill-[#82868c]',
+  fillMuted: 'fill-[#b9c0c9]',
+  fillMutedDark: 'fill-[#82868c]',
 
   textDark: 'text-[#1B1D20]',
   textLight: 'text-[#f0f4fa]',
-  textMuted: 'text-[#82868c]',
+  textMuted: 'text-[#b9c0c9]',
+  textMutedDark: 'text-[#82868c]',
 
   paddingX: 'sm:px-16 px-6',
   paddingY: 'sm:py-16 py-6',
@@ -27,6 +30,6 @@ export const styles = {
 
   workCasePaddingX: 'px-4 sm:px-20 lg:px-32',
 
-  sectionHead: 'text-xs text-[#82868c]',
+  sectionHead: 'text-xs text-[#b9c0c9]',
   skillsHead: 'text-2xl md:text-3xl lg:text-4xl text-[#1B1D20]',
 };

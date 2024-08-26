@@ -67,8 +67,8 @@ export const NavModal = () => {
                 className='mx-auto my-auto flex min-h-[500px] w-3/4 flex-col justify-around xl:w-3/5'
               >
                 <div className='flex flex-col gap-y-4 uppercase'>
-                  <p className={`text-xs ${styles.textMuted}`}>Navigation</p>
-                  <Separator className={`${styles.bgMuted}`} />
+                  <p className={`text-xs ${styles.textMutedDark}`}>Navigation</p>
+                  <Separator className={`${styles.bgMutedDark}`} />
                 </div>
 
                 <div className='flex flex-col gap-y-2'>
@@ -101,9 +101,7 @@ export const NavModal = () => {
                   })}
                 </div>
                 <div className='mt-4 flex flex-col gap-y-4'>
-                  <p className={`text-xs uppercase ${styles.textMuted}`}>
-                    Socials
-                  </p>
+                  <p className={`text-xs uppercase ${styles.textMutedDark}`}>Socials</p>
                   <div className='flex flex-row gap-x-4 xl:gap-x-8'>
                     {socials.map((item, index) => {
                       const { name, link } = item;
