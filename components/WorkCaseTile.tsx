@@ -44,10 +44,10 @@ const WorkCaseTile = ({
           setModal({ active: false, index });
         }}
       >
-        <h2 className='text-3xl font-normal transition duration-500 group-hover:-translate-x-4 lg:text-5xl xl:text-6xl'>
+        <h2 className='text-3xl font-normal transition duration-500 group-hover:-translate-x-4 lg:text-5xl xl:text-6xl lg:pl-7 xl:pl-10'>
           {title}
         </h2>
-        <p className='text-base font-light transition duration-500 group-hover:translate-x-4 xl:text-lg'>
+        <p className='text-base font-light transition duration-500 group-hover:translate-x-4 xl:text-lg lg:pr-7 xl:pr-10'>
           {type}
         </p>
       </motion.div>

@@ -24,7 +24,7 @@ const FeaturedWorkCases = () => {
     <div className='flex flex-col gap-y-8'>
       <motion.h2
         variants={textVariant()}
-        className={`${styles.sectionHead} uppercase`}
+        className={`${styles.sectionHead} uppercase ${styles.extraPaddingX}`}
       >
         Featured Work
       </motion.h2>
