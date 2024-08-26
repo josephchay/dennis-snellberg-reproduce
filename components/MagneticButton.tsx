@@ -10,12 +10,14 @@ import MagneticComponent from '@/hoc/MagneticComponent';
 import { Button } from '@/components/ui/button';
 
 interface MagneticButtonProps extends PropsWithChildren {
+  variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
   size?: 'default' | 'sm' | 'lg' | 'icon' | 'round' | 'filter' | 'wide';
   withShadow?: boolean;
   onClick: () => void;
 }
 
 export const MagneticButton = ({
+  variant = 'default',
   size = 'round',
   onClick,
   withShadow = false,
@@ -41,21 +43,25 @@ export const MagneticButton = ({
       modifier={{ x: 0.2, y: 0.2 }}
     >
       <Button
-        className={`relative overflow-hidden duration-300 ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] transition-shadow' : ''}`}
-        size={size}
-        onClick={onClick}
+        className={`
+          relative overflow-hidden duration-300
+          ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] transition-shadow' : ''}
+        `}
+        variant={ variant }
+        size={ size }
+        onClick={ onClick }
         onMouseEnter={() => {
-          setIsHovered(true);
+          setIsHovered(true)
         }}
         onMouseLeave={() => {
-          setIsHovered(false);
+          setIsHovered(false)
         }}
       >
         <AnimatePresence>
           {isHovered && (
             <motion.div
               className={`pointer-events-none absolute left-0 top-0 h-full w-full rounded-full ${styles.bgPrimary}`}
-              variants={buttonHover}
+              variants={ buttonHover }
               initial={'initial'}
               animate={'enter'}
               exit={'exit'}
