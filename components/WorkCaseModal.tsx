@@ -1,9 +1,11 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+
+import { styles } from '@/lib/styles';
 
 import { type FeaturedWorkCaseType } from '@/types';
 
@@ -118,10 +120,10 @@ export const WorkCaseModal = ({ modal, list }: WorkCaseModalProps) => {
         variants={scaleAnimation}
         initial={'initial'}
         animate={active ? 'open' : 'closed'}
-        className='pointer-events-none absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-teal-700'
+        className={`pointer-events-none absolute z-20 flex h-20 w-20 items-center justify-center rounded-full ${styles.bgPrimary}`}
       />
       <motion.div
-        className='pointer-events-none absolute z-20 flex items-center justify-center'
+        className={`pointer-events-none absolute z-20 flex items-center justify-center ${styles.textLight}`}
         ref={cursorLabelRef}
         variants={scaleAnimation}
         initial={'initial'}
