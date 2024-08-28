@@ -1,6 +1,5 @@
-'use client';
+import { useState, useRef, useEffect, type PropsWithChildren } from 'react';
 
-import { useState, type PropsWithChildren } from 'react';
 import { AnimatePresence, motion, type Variants } from 'framer-motion';
 
 import { styles } from "@/lib/styles";
@@ -24,6 +23,7 @@ export const MagneticButton = ({
   children,
 }: MagneticButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const timeoutRef = useRef<number | null>(null);
 
   const buttonHover: Variants = {
     initial: { y: '100%' },
@@ -37,6 +37,27 @@ export const MagneticButton = ({
     },
   };
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current !== null) {
+      window.clearTimeout(timeoutRef.current);
+    }
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = window.setTimeout(() => {
+      setIsHovered(false);
+    }, 0);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <MagneticComponent
       className='inline-block rounded-full'
@@ -47,21 +68,17 @@ export const MagneticButton = ({
           relative overflow-hidden duration-300
           ${withShadow ? 'shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] transition-shadow' : ''}
         `}
-        variant={ variant }
-        size={ size }
-        onClick={ onClick }
-        onMouseEnter={() => {
-          setIsHovered(true)
-        }}
-        onMouseLeave={() => {
-          setIsHovered(false)
-        }}
+        variant={variant}
+        size={size}
+        onClick={onClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <AnimatePresence>
           {isHovered && (
             <motion.div
               className={`pointer-events-none absolute left-0 top-0 h-full w-full rounded-full ${styles.bgPrimary}`}
-              variants={ buttonHover }
+              variants={buttonHover}
               initial={'initial'}
               animate={'enter'}
               exit={'exit'}
@@ -72,7 +89,9 @@ export const MagneticButton = ({
           className='absolute left-0 top-0 flex h-full w-full items-center justify-center rounded-full'
           modifier={{ x: 0.25, y: 0.25 }}
         >
-          {children}
+          <div className={`transition-colors duration-300 ${isHovered ? 'text-white' : ''}`}>
+            {children}
+          </div>
         </MagneticComponent>
       </Button>
     </MagneticComponent>
