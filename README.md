@@ -1,4 +1,4 @@
-# Folio 2024 of Joseph Chay
+# Portfolio Recreation - Dennis Snellberg
 
 ## About
 
@@ -9,13 +9,13 @@ Recreation attempt of Dennis Snellberg portfolio https://dennissnellenberg.com/
 Clone the repository:
 
 ```bash
-git clone https://github.com/josephchay/folio-2024
+git clone https://github.com/josephchay/dennis-snellberg-recreate
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd https://github.com/josephchay/dennis-snellberg-recreate
+cd dennis-snellberg-recreate
 ```
 
 Install the dependencies:

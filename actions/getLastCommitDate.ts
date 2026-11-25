@@ -4,7 +4,7 @@ export const getLastCommitDate = async () => {
   try {
     const { data } = await octokit.rest.repos.getBranch({
       owner: 'josephchay',
-      repo: 'folio-2024',
+      repo: 'dennis-snellberg-recreate',
       branch: 'main',
     });
 
