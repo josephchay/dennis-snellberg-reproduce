@@ -2,7 +2,7 @@
 
 ## About
 
-Recreation attempt of Dennis Snellberg portfolio https://dennissnellenberg.com/
+Reproduction attempt of Dennis Snellberg portfolio https://dennissnellenberg.com/
 
 ## Development
 
